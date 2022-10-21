@@ -1,0 +1,3 @@
+#!/bin/bash
+rm hmanhng-repo.*
+repo-add -R -q hmanhng-repo.db.tar.gz *.pkg.tar.zst

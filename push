@@ -1,0 +1,19 @@
+cd x86_64 && sh update && cd ..
+
+# And delete the `.git` folder:
+rm -rf .git
+
+# Now, re-initialize the repository:
+git init
+git remote add origin https://github.com/hmanhng/pkgs
+git remote -v
+
+# Add all the files and commit the changes:
+git add --all
+git commit -am "$(date)"
+
+# Force push update to the master branch of our project repository:
+git push -f origin master
+echo "################################################################"
+echo "###################    Git Push Done      ######################"
+echo "################################################################"

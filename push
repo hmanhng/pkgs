@@ -1,12 +1,12 @@
 cd x86_64 && sh update && cd ..
 
 # And delete the `.git` folder:
-rm -rf .git
+# rm -rf .git
 
 # Now, re-initialize the repository:
-git init
-git remote add origin https://github.com/hmanhng/pkgs
-git remote -v
+# git init
+# git remote add origin https://github.com/hmanhng/pkgs
+# git remote -v
 
 # Add all the files and commit the changes:
 git add --all
